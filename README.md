@@ -1,7 +1,7 @@
-# UltraWolves — G-Wolves Fenrir Asym 8K（PAW3950）免拆机增强固件与命令行工具包
+# UltraWolves — G-Wolves Fenrir Asym 8K（PAW3950）增强固件与命令行工具包
 
 > **免拆机纯 USB 刷写 · 全功能真机实证 · 随时 60 秒无损退回官方原厂**  
-> 本发布包包含面向 **G-Wolves Fenrir Asym 8K** 鼠标的最新 **UltraWolves（Phase 3+ 含真机已修复的 `fix-a` 解锁时序）** 增强固件，以及配套的跨有线/无线命令行配置、传感器快照诊断与安全刷写工具。
+> 本发布包包含面向 **G-Wolves Fenrir Asym 8K** 鼠标的最新 **UltraWolves** 增强固件，以及配套的跨有线/无线命令行配置、传感器快照诊断与安全刷写工具。
 >
 > 👶 **纯小白 / 懒得看参数表？直接点这里看人话版 3 分钟速通教程 → [docs/00_小白速通指南_ELI5.md](docs/00_小白速通指南_ELI5.md)**
 
