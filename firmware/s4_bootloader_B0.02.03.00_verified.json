@@ -1,0 +1,17 @@
+{
+  "device_family": "G-Wolves Fenrir Asym 8K (nRF52840 + PAW3950 ID53)",
+  "stock_app_fw": "v1.00.39.00",
+  "bootloader_fw": "B0.02.03.00",
+  "verified_range": "0x00006000..0x00025000",
+  "tier1": {
+    "writable": true,
+    "verified": true,
+    "boots": true
+  },
+  "tier2": {
+    "phase3_ext_writable": true,
+    "phase3_ext_verified": true,
+    "phase3_ext_boots": true
+  },
+  "notes": "Sanitized reference gate verified on stock v1.00.39.00 + Bootloader B0.02.03.00. Cautious users may run s4-blank-probe and s4-canary on their own unit first."
+}

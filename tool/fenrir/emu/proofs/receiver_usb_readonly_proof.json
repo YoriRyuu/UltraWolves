@@ -1,0 +1,120 @@
+{
+  "firmware": {
+    "file": "work\\packages\\receiver\\payload\\8K_Dongle_USB_App_FW_v1.00.39.00_20250605.hex",
+    "hex_sha256": "8ff3861eaf60fc52c2584eea0b850a2f593e3272320c15b87d990a805f662e75",
+    "defined_bytes": 22824,
+    "base": "0x08006000",
+    "end_exclusive": "0x0800B928"
+  },
+  "dispatcher": "0x08008348",
+  "generated_at_utc": "2026-11-24T01:06:23.247406+00:00",
+  "total_candidates": 3,
+  "total_passed": 3,
+  "failures": [],
+  "verified_readonly_commands": [
+    {
+      "name": "rx_usb_mode_query",
+      "target_role": "receiver_usb_local",
+      "family": "A",
+      "route": 0,
+      "group": 0,
+      "cmd": 128,
+      "request_hex": "00000000008000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "output_hex": "a0000009008000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "inner_status": "0xA0",
+      "reply_length_field": 9,
+      "instructions": 13,
+      "side_effect_free": true,
+      "passed": true,
+      "unexpected_ram_diffs": [],
+      "mmio_diffs": [],
+      "wdt_kicked": false,
+      "nvic_diffs": [],
+      "hit_forbidden": [],
+      "stopped_reason": null
+    },
+    {
+      "name": "rx_usb_fw_version",
+      "target_role": "receiver_usb_local",
+      "family": "A",
+      "route": 0,
+      "group": 0,
+      "cmd": 129,
+      "request_hex": "00000000008100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "output_hex": "a0000006008101002700001700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "inner_status": "0xA0",
+      "reply_length_field": 6,
+      "instructions": 32,
+      "side_effect_free": true,
+      "passed": true,
+      "unexpected_ram_diffs": [],
+      "mmio_diffs": [],
+      "wdt_kicked": false,
+      "nvic_diffs": [],
+      "hit_forbidden": [],
+      "stopped_reason": null
+    },
+    {
+      "name": "rx_usb_test_pattern",
+      "target_role": "receiver_usb_local",
+      "family": "A",
+      "route": 0,
+      "group": 0,
+      "cmd": 130,
+      "request_hex": "00000000008200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "output_hex": "a0000006008201020304050600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "inner_status": "0xA0",
+      "reply_length_field": 6,
+      "instructions": 29,
+      "side_effect_free": true,
+      "passed": true,
+      "unexpected_ram_diffs": [],
+      "mmio_diffs": [],
+      "wdt_kicked": false,
+      "nvic_diffs": [],
+      "hit_forbidden": [],
+      "stopped_reason": null
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "neg_rx_usb_0x00_B0_bootloader",
+      "request_hex": "000000010000b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "caught_as_unsafe": true,
+      "hit_forbidden": [
+        "0x0800678C:SYSRESETREQ_spin"
+      ],
+      "unexpected_ram_diffs": [
+        {
+          "start": "0x2000006B",
+          "end_exclusive": "0x2000006C",
+          "size": 1
+        },
+        {
+          "start": "0x200197FC",
+          "end_exclusive": "0x20019800",
+          "size": 4
+        }
+      ]
+    },
+    {
+      "name": "neg_rx_usb_0x85_invalid_A3",
+      "request_hex": "00000000008500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "caught_as_unsafe": true,
+      "reply_status": "0xA3"
+    },
+    {
+      "name": "neg_rx_usb_0x6870_frame4_B0_sticky_spi_bridge",
+      "request_hex": "00018101b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "caught_as_unsafe": true,
+      "sticky_byte_20000031": 1,
+      "unexpected_ram_diffs": [
+        {
+          "start": "0x20000031",
+          "end_exclusive": "0x20000032",
+          "size": 1
+        }
+      ]
+    }
+  ]
+}

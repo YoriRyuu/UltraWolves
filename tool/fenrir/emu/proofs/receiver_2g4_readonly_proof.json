@@ -1,0 +1,484 @@
+{
+  "firmware": {
+    "file": "work\\packages\\receiver\\payload\\8K_Dongle_2.4G_App_FW_v1.00.39.00_20250605.hex",
+    "hex_sha256": "5c0aa0f7e9af35db89968ed36df91cb76451cd0258e429f7c5d9d1385862929e",
+    "defined_bytes": 27168,
+    "base": "0x00007000",
+    "end_exclusive": "0x0000DA20"
+  },
+  "dispatcher": "0xB21C / 0xAFD0",
+  "generated_at_utc": "2026-11-24T01:06:23.312117+00:00",
+  "total_candidates": 9,
+  "total_passed": 9,
+  "failures": [],
+  "verified_readonly_commands": [
+    {
+      "name": "rx_2g4_mode_query",
+      "target_role": "receiver_2g4_local",
+      "family": "A",
+      "route": 1,
+      "group": 0,
+      "cmd": 128,
+      "dispatcher": "0xAFD0",
+      "request_hex": "00000100008000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "output_hex": "a0000109008000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "inner_status": "0xA0",
+      "reply_length_field": 9,
+      "instructions": 13,
+      "side_effect_free": true,
+      "passed": true,
+      "unexpected_ram_diffs": [],
+      "mmio_diffs": [],
+      "wdt_kicked": false,
+      "nvic_diffs": [],
+      "hit_forbidden": [],
+      "stopped_reason": null
+    },
+    {
+      "name": "rx_2g4_fw_version",
+      "target_role": "receiver_2g4_local",
+      "family": "A",
+      "route": 1,
+      "group": 0,
+      "cmd": 129,
+      "dispatcher": "0xAFD0",
+      "request_hex": "00000100008100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "output_hex": "a0000106008101002700770300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "inner_status": "0xA0",
+      "reply_length_field": 6,
+      "instructions": 34,
+      "side_effect_free": true,
+      "passed": true,
+      "unexpected_ram_diffs": [],
+      "mmio_diffs": [],
+      "wdt_kicked": false,
+      "nvic_diffs": [],
+      "hit_forbidden": [],
+      "stopped_reason": null
+    },
+    {
+      "name": "rx_2g4_test_pattern",
+      "target_role": "receiver_2g4_local",
+      "family": "A",
+      "route": 1,
+      "group": 0,
+      "cmd": 130,
+      "dispatcher": "0xAFD0",
+      "request_hex": "00000100008200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "output_hex": "a0000106008201020304050600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "inner_status": "0xA0",
+      "reply_length_field": 6,
+      "instructions": 29,
+      "side_effect_free": true,
+      "passed": true,
+      "unexpected_ram_diffs": [],
+      "mmio_diffs": [],
+      "wdt_kicked": false,
+      "nvic_diffs": [],
+      "hit_forbidden": [],
+      "stopped_reason": null
+    },
+    {
+      "name": "rx_2g4_pair_id_read",
+      "target_role": "receiver_2g4_local",
+      "family": "A",
+      "route": 1,
+      "group": 0,
+      "cmd": 138,
+      "dispatcher": "0xAFD0",
+      "request_hex": "00000100008a00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "output_hex": "a0000104008aaabbccdd000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "inner_status": "0xA0",
+      "reply_length_field": 4,
+      "instructions": 30,
+      "side_effect_free": true,
+      "passed": true,
+      "unexpected_ram_diffs": [],
+      "mmio_diffs": [],
+      "wdt_kicked": false,
+      "nvic_diffs": [],
+      "hit_forbidden": [],
+      "stopped_reason": null
+    },
+    {
+      "name": "rx_2g4_rf_state_read",
+      "target_role": "receiver_2g4_local",
+      "family": "A",
+      "route": 1,
+      "group": 0,
+      "cmd": 139,
+      "dispatcher": "0xAFD0",
+      "request_hex": "00000101008b02000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "output_hex": "a0000106008b02013322554400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "inner_status": "0xA0",
+      "reply_length_field": 6,
+      "instructions": 39,
+      "side_effect_free": true,
+      "passed": true,
+      "unexpected_ram_diffs": [],
+      "mmio_diffs": [],
+      "wdt_kicked": false,
+      "nvic_diffs": [],
+      "hit_forbidden": [],
+      "stopped_reason": null
+    },
+    {
+      "name": "rx_2g4_status_flag_read",
+      "target_role": "receiver_2g4_local",
+      "family": "A",
+      "route": 1,
+      "group": 0,
+      "cmd": 140,
+      "dispatcher": "0xAFD0",
+      "request_hex": "00000100008c00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "output_hex": "a0000101008c00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "inner_status": "0xA0",
+      "reply_length_field": 1,
+      "instructions": 20,
+      "side_effect_free": true,
+      "passed": true,
+      "unexpected_ram_diffs": [],
+      "mmio_diffs": [],
+      "wdt_kicked": false,
+      "nvic_diffs": [],
+      "hit_forbidden": [],
+      "stopped_reason": null
+    },
+    {
+      "name": "rx_2g4_b_fw_version",
+      "target_role": "receiver_2g4_local",
+      "family": "B",
+      "route": 0,
+      "group": null,
+      "cmd": 129,
+      "dispatcher": "0xB21C",
+      "request_hex": "00018100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "output_hex": "a1068100010027007703000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "reply_status": "0xA1",
+      "reply_length_field": 6,
+      "spi_chunks_enqueued": 2,
+      "rf_chunks_enqueued": 0,
+      "instructions": 388,
+      "side_effect_free": true,
+      "passed": true,
+      "unexpected_ram_diffs": [],
+      "mmio_diffs": [],
+      "wdt_kicked": false,
+      "nvic_diffs": [],
+      "hit_forbidden": [],
+      "hit_watch_sites": [
+        "0x0000D266:spi_tx_config_chunker"
+      ],
+      "stopped_reason": null
+    },
+    {
+      "name": "rx_2g4_b_mouse_link_status",
+      "target_role": "receiver_2g4_local",
+      "family": "B",
+      "route": 0,
+      "group": null,
+      "cmd": 144,
+      "dispatcher": "0xB21C",
+      "request_hex": "00019000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "output_hex": "a1019000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "reply_status": "0xA1",
+      "reply_length_field": 1,
+      "spi_chunks_enqueued": 1,
+      "rf_chunks_enqueued": 0,
+      "instructions": 284,
+      "side_effect_free": true,
+      "passed": true,
+      "unexpected_ram_diffs": [],
+      "mmio_diffs": [],
+      "wdt_kicked": false,
+      "nvic_diffs": [],
+      "hit_forbidden": [],
+      "hit_watch_sites": [
+        "0x0000BDB4:mouse_rf_link_connected",
+        "0x0000D266:spi_tx_config_chunker"
+      ],
+      "stopped_reason": null,
+      "link_states_verified": {
+        "connected_1": {
+          "status": "0xA1",
+          "len": 1,
+          "link_byte": 1
+        },
+        "disconnected_0": {
+          "status": "0xA1",
+          "len": 1,
+          "link_byte": 0
+        }
+      }
+    },
+    {
+      "name": "rx_2g4_b_ficr_device_id",
+      "target_role": "receiver_2g4_local",
+      "family": "B",
+      "route": 0,
+      "group": null,
+      "cmd": 147,
+      "dispatcher": "0xB21C",
+      "request_hex": "00019300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "output_hex": "a1049300443322110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "reply_status": "0xA1",
+      "reply_length_field": 4,
+      "spi_chunks_enqueued": 1,
+      "rf_chunks_enqueued": 0,
+      "instructions": 311,
+      "side_effect_free": true,
+      "passed": true,
+      "unexpected_ram_diffs": [],
+      "mmio_diffs": [],
+      "wdt_kicked": false,
+      "nvic_diffs": [],
+      "hit_forbidden": [],
+      "hit_watch_sites": [
+        "0x0000D266:spi_tx_config_chunker"
+      ],
+      "stopped_reason": null,
+      "expected_device_id_le_hex": "44332211"
+    }
+  ],
+  "verified_forwarding_paths": [
+    {
+      "target_role": "receiver_to_mouse_rf",
+      "family": "B",
+      "route": 1,
+      "passed": true,
+      "connected_routed_to_c328": true,
+      "connected_skipped_d266": true,
+      "connected_side_effect_free": true,
+      "disconnected_status": "0xA4",
+      "disconnected_skipped_c328": true,
+      "disconnected_skipped_d266": true,
+      "disconnected_side_effect_free": true,
+      "cases": [
+        {
+          "label": "rf_mouse_b_fw_version_sensor",
+          "request_hex": "00018101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "expected_rf_len": 6,
+          "connected": {
+            "routed_to_c328": true,
+            "skipped_d266": true,
+            "rf_chunks_enqueued": 1,
+            "rf_payload_match": true,
+            "side_effect_free": true,
+            "status": "0xA0",
+            "ram_diffs": []
+          },
+          "disconnected": {
+            "status": "0xA4",
+            "skipped_c328": true,
+            "skipped_d266": true,
+            "side_effect_free": true,
+            "ram_diffs": []
+          }
+        },
+        {
+          "label": "rf_mouse_b_dpi_table",
+          "request_hex": "00018301000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "expected_rf_len": 6,
+          "connected": {
+            "routed_to_c328": true,
+            "skipped_d266": true,
+            "rf_chunks_enqueued": 1,
+            "rf_payload_match": true,
+            "side_effect_free": true,
+            "status": "0xA0",
+            "ram_diffs": []
+          },
+          "disconnected": {
+            "status": "0xA4",
+            "skipped_c328": true,
+            "skipped_d266": true,
+            "side_effect_free": true,
+            "ram_diffs": []
+          }
+        },
+        {
+          "label": "rf_mouse_b_multichunk_12b",
+          "request_hex": "000c8101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "expected_rf_len": 17,
+          "connected": {
+            "routed_to_c328": true,
+            "skipped_d266": true,
+            "rf_chunks_enqueued": 3,
+            "rf_payload_match": true,
+            "side_effect_free": true,
+            "status": "0xA0",
+            "ram_diffs": []
+          },
+          "disconnected": {
+            "status": "0xA4",
+            "skipped_c328": true,
+            "skipped_d266": true,
+            "side_effect_free": true,
+            "ram_diffs": []
+          }
+        }
+      ]
+    },
+    {
+      "target_role": "receiver_to_mouse_rf",
+      "family": "A",
+      "route": 2,
+      "passed": true,
+      "connected_routed_to_c328": true,
+      "connected_skipped_d266": true,
+      "connected_side_effect_free": true,
+      "disconnected_status": "0xA4",
+      "disconnected_skipped_c328": true,
+      "disconnected_skipped_d266": true,
+      "disconnected_side_effect_free": true,
+      "cases": [
+        {
+          "label": "rf_mouse_a_g0_fw_version",
+          "request_hex": "00000200008100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "expected_rf_len": 7,
+          "connected": {
+            "routed_to_c328": true,
+            "skipped_d266": true,
+            "rf_chunks_enqueued": 2,
+            "rf_payload_match": true,
+            "side_effect_free": true,
+            "status": "0xA0",
+            "ram_diffs": []
+          },
+          "disconnected": {
+            "status": "0xA4",
+            "skipped_c328": true,
+            "skipped_d266": true,
+            "side_effect_free": true,
+            "ram_diffs": []
+          }
+        },
+        {
+          "label": "rf_mouse_a_g3_keyslot_read",
+          "request_hex": "00000203038001010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "expected_rf_len": 10,
+          "connected": {
+            "routed_to_c328": true,
+            "skipped_d266": true,
+            "rf_chunks_enqueued": 2,
+            "rf_payload_match": true,
+            "side_effect_free": true,
+            "status": "0xA0",
+            "ram_diffs": []
+          },
+          "disconnected": {
+            "status": "0xA4",
+            "skipped_c328": true,
+            "skipped_d266": true,
+            "side_effect_free": true,
+            "ram_diffs": []
+          }
+        },
+        {
+          "label": "rf_mouse_a_g0_46b_record",
+          "request_hex": "0000022e008200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "expected_rf_len": 53,
+          "connected": {
+            "routed_to_c328": true,
+            "skipped_d266": true,
+            "rf_chunks_enqueued": 9,
+            "rf_payload_match": true,
+            "side_effect_free": true,
+            "status": "0xA0",
+            "ram_diffs": []
+          },
+          "disconnected": {
+            "status": "0xA4",
+            "skipped_c328": true,
+            "skipped_d266": true,
+            "side_effect_free": true,
+            "ram_diffs": []
+          }
+        }
+      ]
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "neg_rx_2g4_0x00_B0_bootloader",
+      "request_hex": "000001010000b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "caught_as_unsafe": true,
+      "hit_forbidden": [
+        "0x00007A58:SYSRESETREQ_request_and_spin"
+      ],
+      "unexpected_ram_diffs": [
+        {
+          "start": "0x2000000F",
+          "end_exclusive": "0x20000010",
+          "size": 1
+        },
+        {
+          "start": "0x20006FFC",
+          "end_exclusive": "0x20007000",
+          "size": 4
+        }
+      ]
+    },
+    {
+      "name": "neg_rx_2g4_0x00_A0_factory",
+      "request_hex": "0000010a0000a0000101f80a0c0132a5000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "caught_as_unsafe": true,
+      "hit_forbidden": [
+        "0x0000C3B8:factory_RADIO_packet_configure"
+      ],
+      "unexpected_ram_diffs": [
+        {
+          "start": "0x2000000F",
+          "end_exclusive": "0x20000010",
+          "size": 1
+        },
+        {
+          "start": "0x20001379",
+          "end_exclusive": "0x20001381",
+          "size": 8
+        }
+      ]
+    },
+    {
+      "name": "neg_rx_2g4_0x8D_invalid_A3",
+      "request_hex": "00000100008d00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "caught_as_unsafe": true,
+      "reply_status": "0xA3"
+    },
+    {
+      "name": "neg_rx_2g4_0x0A_nv_pair_id_write",
+      "request_hex": "00000104000a11223344000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "caught_as_unsafe": true,
+      "hit_forbidden": [
+        "0x0000BB44:queue_or_dirty_mark"
+      ],
+      "unexpected_ram_diffs": [
+        {
+          "start": "0x2000130E",
+          "end_exclusive": "0x20001312",
+          "size": 4
+        }
+      ]
+    },
+    {
+      "name": "neg_rx_2g4_0x0B_pid_vid_write",
+      "request_hex": "00000106000b020133e4351700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "caught_as_unsafe": true,
+      "hit_forbidden": [
+        "0x0000BB44:queue_or_dirty_mark"
+      ],
+      "unexpected_ram_diffs": [
+        {
+          "start": "0x2000132F",
+          "end_exclusive": "0x20001330",
+          "size": 1
+        },
+        {
+          "start": "0x20001331",
+          "end_exclusive": "0x20001333",
+          "size": 2
+        }
+      ]
+    }
+  ]
+}

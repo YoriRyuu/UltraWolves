@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0",
+  "polling_rate_code": 128,
+  "dpi_active_slot": 1,
+  "dpi_stage_count": 1,
+  "dpi_slots": [
+    {
+      "x_cpi": 1600,
+      "y_cpi": 1600,
+      "rgb": [
+        27,
+        15,
+        74
+      ]
+    },
+    {
+      "x_cpi": 800,
+      "y_cpi": 800,
+      "rgb": [
+        255,
+        165,
+        0
+      ]
+    },
+    {
+      "x_cpi": 1600,
+      "y_cpi": 1600,
+      "rgb": [
+        255,
+        255,
+        0
+      ]
+    },
+    {
+      "x_cpi": 3200,
+      "y_cpi": 3200,
+      "rgb": [
+        0,
+        255,
+        0
+      ]
+    },
+    {
+      "x_cpi": 4500,
+      "y_cpi": 4500,
+      "rgb": [
+        0,
+        255,
+        255
+      ]
+    },
+    {
+      "x_cpi": 5000,
+      "y_cpi": 5000,
+      "rgb": [
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "x_cpi": 6400,
+      "y_cpi": 6400,
+      "rgb": [
+        128,
+        0,
+        128
+      ]
+    }
+  ],
+  "debounce_ms": [
+    0,
+    0,
+    9,
+    9
+  ],
+  "immediate_debounce_reload": true,
+  "lod": 2,
+  "motionsync": false,
+  "reg56": false,
+  "angle_deg": 0,
+  "sensor_mode_hp": true,
+  "rgb_enabled": false,
+  "rgb_effect_mode": 1,
+  "sleep_sec": 30,
+  "keymap": [
+    {
+      "action_type": 1,
+      "b1": 1,
+      "b2": 0,
+      "b3": 0,
+      "b4": 0,
+      "b5": 0
+    },
+    {
+      "action_type": 2,
+      "b1": 1,
+      "b2": 0,
+      "b3": 0,
+      "b4": 0,
+      "b5": 0
+    },
+    {
+      "action_type": 3,
+      "b1": 1,
+      "b2": 0,
+      "b3": 0,
+      "b4": 0,
+      "b5": 0
+    },
+    {
+      "action_type": 4,
+      "b1": 1,
+      "b2": 0,
+      "b3": 0,
+      "b4": 0,
+      "b5": 0
+    },
+    {
+      "action_type": 5,
+      "b1": 1,
+      "b2": 0,
+      "b3": 0,
+      "b4": 0,
+      "b5": 0
+    },
+    {
+      "action_type": 11,
+      "b1": 1,
+      "b2": 0,
+      "b3": 0,
+      "b4": 0,
+      "b5": 0
+    }
+  ]
+}

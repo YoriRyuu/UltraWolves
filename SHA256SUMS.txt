@@ -1,0 +1,9 @@
+# UltraWolves (Fenrir Asym 8K Phase 3+ v1) - SHA-256 Checksums
+# Verify in PowerShell: Get-FileHash <file> -Algorithm SHA256
+
+cb0b9170f1d986c91b2002aeadcc09756e70471bb08931fa9790bbefb665610a  firmware/s4_bootloader_B0.02.03.00_verified.json
+f12621981f4ae57c8624606f60548827b2304d89ad647795224809f90346f8bd  firmware/UltraWolves_Fenrir_Asym_8K_v1.00.39.00.hex
+a7f37beb881e3b4adf58c71fdee61e773945dad9809be800f7bc1bac164bc69c  firmware/UltraWolves_Fenrir_Asym_8K_v1.00.39.00.manifest.json
+
+# Reference ONLY (Official Stock HEX NOT bundled; obtain from G-Wolves official mouse updater package):
+# fd0ad5f1221bc0d227e423f87ec98d71033573e8a8a497856142c6000d12874f  Fenrir+035-8K_Mouse_App_FW_v1.00.39.00_20250605.hex

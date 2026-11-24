@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fenrir"
+version = "0.1.0"
+description = "Fenrir mouse & receiver read-only probe, configuration suite, and offline verification tools"
+requires-python = ">=3.12"
+dependencies = [
+    "hidapi>=0.15.0",
+    "unicorn>=2.1.4",
+    "capstone>=5.0.9",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=9.0.0",
+]
+
+[project.scripts]
+fenrir-probe = "fenrir.probe.cli:main"
+fenrir-cfg = "fenrir.config.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["fenrir*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+# Unicorn 2.1.4 triggers a benign first-chance Windows SEH inside uc.mem_map during lazy TCG init.
+addopts = "-p no:faulthandler"

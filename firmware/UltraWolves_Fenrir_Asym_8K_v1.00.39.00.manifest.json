@@ -1,0 +1,1311 @@
+{
+  "artifact_tag": "NOT_FOR_FLASH",
+  "not_for_flash": true,
+  "offline_only": true,
+  "hardware_flashing_supported": false,
+  "warning": "NOT_FOR_FLASH: Offline simulation and verification artifact only. No flashing/uploading support exists; NEVER write directly to hardware.",
+  "built_at_utc": "2026-11-24T06:38:03.387759+00:00",
+  "stock": {
+    "file": "Fenrir+035-8K_Mouse_App_FW_v1.00.39.00_20250605.hex (official stock base)",
+    "hex_sha256": "fd0ad5f1221bc0d227e423f87ec98d71033573e8a8a497856142c6000d12874f",
+    "defined_bytes": 117260,
+    "base": "0x00006000",
+    "end_exclusive": "0x00022A0C",
+    "entry": "0x00006201",
+    "ranges": [
+      {
+        "start": "0x00006000",
+        "end_exclusive": "0x00022A0C",
+        "bytes": 117260
+      }
+    ]
+  },
+  "output": {
+    "hex_path": "firmware/UltraWolves_Fenrir_Asym_8K_v1.00.39.00.hex",
+    "hex_sha256": "f12621981f4ae57c8624606f60548827b2304d89ad647795224809f90346f8bd",
+    "defined_bytes": 123240,
+    "base": "0x00006000",
+    "end_exclusive": "0x00024260",
+    "entry": "0x00006201",
+    "ranges": [
+      {
+        "start": "0x00006000",
+        "end_exclusive": "0x00022F08",
+        "bytes": 118536
+      },
+      {
+        "start": "0x00023000",
+        "end_exclusive": "0x00024260",
+        "bytes": 4704
+      }
+    ]
+  },
+  "protected_ranges": [
+    {
+      "label": "bootloader_mbr_softdevice_low",
+      "start": "0x00000000",
+      "end_exclusive": "0x00006000",
+      "bytes": 24576
+    },
+    {
+      "label": "unverified_post_phase3_flash",
+      "start": "0x00025000",
+      "end_exclusive": "0x00050000",
+      "bytes": 176128
+    },
+    {
+      "label": "stock_nv_50000",
+      "start": "0x00050000",
+      "end_exclusive": "0x00051000",
+      "bytes": 4096
+    },
+    {
+      "label": "stock_nv_8c000_macro_dir",
+      "start": "0x0008C000",
+      "end_exclusive": "0x0008D000",
+      "bytes": 4096
+    },
+    {
+      "label": "stock_nv_90000_dffff_object_pool",
+      "start": "0x00090000",
+      "end_exclusive": "0x000E0000",
+      "bytes": 327680
+    },
+    {
+      "label": "stock_nv_eb000_identity",
+      "start": "0x000EB000",
+      "end_exclusive": "0x000EC000",
+      "bytes": 4096
+    },
+    {
+      "label": "stock_nv_ec000_config",
+      "start": "0x000EC000",
+      "end_exclusive": "0x000ED000",
+      "bytes": 4096
+    }
+  ],
+  "cave_pools": {
+    "initial": [
+      {
+        "label": "app_tail_cave",
+        "start": "0x00022A0C",
+        "end_exclusive": "0x00023000",
+        "bytes": 1524
+      },
+      {
+        "label": "phase3_ext_cave",
+        "start": "0x00023000",
+        "end_exclusive": "0x00025000",
+        "bytes": 8192
+      }
+    ],
+    "remaining_bytes": 3736,
+    "remaining_spans": [
+      {
+        "label": "app_tail_cave",
+        "start": "0x00022F08",
+        "end_exclusive": "0x00023000",
+        "bytes": 248
+      },
+      {
+        "label": "phase3_ext_cave",
+        "start": "0x00024260",
+        "end_exclusive": "0x00025000",
+        "bytes": 3488
+      }
+    ]
+  },
+  "stats": {
+    "modified_stock_bytes": 345,
+    "added_cave_bytes": 5980,
+    "total_changed_or_added_bytes": 6325,
+    "edit_count": 32,
+    "allocation_count": 9,
+    "verified_fingerprint_count": 96
+  },
+  "symbols": {
+    "apply_id53_overrides": "0x00023C0E",
+    "cave_mode_apply_tail": "0x00023D7A",
+    "cave_mode_worker": "0x00023D62",
+    "cave_powerup_tail": "0x00023D72",
+    "cfg_load_page": "0x00023104",
+    "cfg_reset_page": "0x00023296",
+    "cfg_save_page": "0x00023210",
+    "cfg_validate": "0x00023018",
+    "debounce_05_immediate_reload": "0x00022A24",
+    "fault_bootloader_eject": "0x00022A0C",
+    "group5_core": "0x00023BAC",
+    "group5_dispatch": "0x00023E2C",
+    "group5_trampoline": "0x00023E24",
+    "override_worker": "0x00023D4C",
+    "p3_acc_commit": "0x000233A6",
+    "p3_acc_snap": "0x00023384",
+    "p3_ble_post_tx": "0x000234F2",
+    "p3_ble_snap": "0x000234E0",
+    "p3_ble_thread_wrap": "0x000235E2",
+    "p3_diag_inc": "0x00022A6C",
+    "p3_diag_reset": "0x00022A82",
+    "p3_ep81_guard": "0x0002351E",
+    "p3_flash_pause_hook": "0x0002381E",
+    "p3_flash_resume_hook": "0x00023840",
+    "p3_group5_dispatch": "0x00022AC2",
+    "p3_irq20_commit": "0x0002351A",
+    "p3_irq20_snap": "0x0002350A",
+    "p3_irq9_plock_hook": "0x00023666",
+    "p3_irq9_stationary_hook": "0x0002361C",
+    "p3_ram_init": "0x00022A30",
+    "p3_spim3_hook": "0x00023552",
+    "p3_usb_post_tx": "0x000234AC",
+    "p3_usb_snap": "0x00023494",
+    "p3_wl_post_tx": "0x0002344E",
+    "p3_wl_snap": "0x00023434",
+    "p3p_anti_slam_landing": "0x00023964",
+    "p3p_anti_slam_lifted": "0x00023948",
+    "p3p_apply_ce_static": "0x00023A00",
+    "p3p_apply_lod_raw": "0x00023ABC",
+    "p3p_irq6_hook": "0x000238F2",
+    "p3p_irq9_entry_capture": "0x00023810",
+    "p3p_lod_tail": "0x00023980",
+    "p3p_peek_worker": "0x00023B3A",
+    "p3p_rf_check_s2": "0x00022EB6",
+    "p3p_rf_set_type_b0": "0x00022EEA",
+    "p3p_wl_q2_push": "0x00022E28",
+    "persist_hook": "0x0002335E",
+    "persistence_core": "0x00023000",
+    "phase3_diag_core": "0x00022A30",
+    "phase3_motion_core": "0x00023384",
+    "phase3_plock_core": "0x0002361C",
+    "phase3plus_abs_core": "0x00022E28",
+    "phase3plus_w2_core": "0x000238C8",
+    "ro_tables": "0x0002401C",
+    "snapshot_worker": "0x00023D90",
+    "startup_hook": "0x00023352",
+    "valid_fps_tuple": "0x00023000"
+  },
+  "allocations": [
+    {
+      "name": "fault_bootloader_eject",
+      "address": "0x00022A0C",
+      "end_exclusive": "0x00022A24",
+      "bytes": 24,
+      "kind": "code",
+      "module": "recovery",
+      "reason": "Stackless fault eject: write 0xA55AA55A to 0x2003FFFC then NVIC_SystemReset"
+    },
+    {
+      "name": "debounce_05_immediate_reload",
+      "address": "0x00022A24",
+      "end_exclusive": "0x00022A30",
+      "bytes": 12,
+      "kind": "code",
+      "module": "debounce_mod",
+      "reason": "Call config_mark_dirty(8, 0) then immediately reload live debounce via 0xC1E8"
+    },
+    {
+      "name": "phase3_diag_core",
+      "address": "0x00022A30",
+      "end_exclusive": "0x00022E28",
+      "bytes": 1016,
+      "kind": "code",
+      "module": "phase3_diag",
+      "reason": "Phase 3+ retained control/diag RAM layout, atomic counter helpers, and Group 5 0x82..0x84/0x06..0x08 handlers"
+    },
+    {
+      "name": "persistence_core",
+      "address": "0x00023000",
+      "end_exclusive": "0x00023384",
+      "bytes": 900,
+      "kind": "code",
+      "module": "persistence",
+      "reason": "Independent CRC16 config page at 0x000EA000 using stock 0xC990/0xF2BC/0xF2DE/0xF304/0xF356"
+    },
+    {
+      "name": "phase3_motion_core",
+      "address": "0x00023384",
+      "end_exclusive": "0x0002361C",
+      "bytes": 664,
+      "kind": "code",
+      "module": "phase3_motion",
+      "reason": "Atomic s16 accumulator + SPIM3 direct toggle + EP81 overwrite guard"
+    },
+    {
+      "name": "phase3_plock_core",
+      "address": "0x0002361C",
+      "end_exclusive": "0x000238C8",
+      "bytes": 684,
+      "kind": "code",
+      "module": "phase3_plock",
+      "reason": "TIMER1 bounded phase-lock + flash pause/resume sync + stationary tracking"
+    },
+    {
+      "name": "phase3plus_abs_core",
+      "address": "0x00022E28",
+      "end_exclusive": "0x00022F08",
+      "bytes": 224,
+      "kind": "code",
+      "module": "phase3plus_abs",
+      "reason": "Active mouse-side wireless u16 ABS (type 0x0A, default OFF) + mixed-packet split guard"
+    },
+    {
+      "name": "phase3plus_w2_core",
+      "address": "0x000238C8",
+      "end_exclusive": "0x00023BAC",
+      "bytes": 740,
+      "kind": "code",
+      "module": "phase3plus_w2",
+      "reason": "Wave 2 S2b P2/P3 core: eager-wake, ce-static, lod-raw + peek worker, anti-slam window"
+    },
+    {
+      "name": "group5_core",
+      "address": "0x00023BAC",
+      "end_exclusive": "0x00024260",
+      "bytes": 1716,
+      "kind": "code",
+      "module": "group5",
+      "reason": "Group 5 unified dispatcher, cooperative snapshot/override workers, and ID53 isolation"
+    }
+  ],
+  "edits": [
+    {
+      "address": "0x0000600C",
+      "length": 16,
+      "old_hex": "af640000b1640000b3640000b5640000",
+      "new_hex": "0d2a02000d2a02000d2a02000d2a0200",
+      "module": "recovery",
+      "reason": "H1: Route HardFault/MemManage/BusFault/UsageFault to Bootloader eject seat"
+    },
+    {
+      "address": "0x00018AF8",
+      "length": 4,
+      "old_hex": "02f050f9",
+      "new_hex": "09f094ff",
+      "module": "debounce_mod",
+      "reason": "H3: Family B 0x05 immediate 0xC1E8 threshold reload"
+    },
+    {
+      "address": "0x0001301A",
+      "length": 4,
+      "old_hex": "fef7e1f8",
+      "new_hex": "10f09af9",
+      "module": "persistence",
+      "reason": "H4: Initialize 0x2003F000 Phase 2 state and load CRC16 page 0xEA000 after 0x111E0"
+    },
+    {
+      "address": "0x0001312E",
+      "length": 4,
+      "old_hex": "04f04dfb",
+      "new_hex": "10f016f9",
+      "module": "persistence",
+      "reason": "H8: Service Phase 2 pending_save after stock 0x177CC"
+    },
+    {
+      "address": "0x0001DEFE",
+      "length": 4,
+      "old_hex": "fff7ebfd",
+      "new_hex": "05f028fb",
+      "module": "phase3_motion",
+      "reason": "SPIM3 sample hook (0x01DEFE -> p3_spim3_hook -> 0x01DAD8)"
+    },
+    {
+      "address": "0x00018068",
+      "length": 22,
+      "old_hex": "8448b0f900008649a1f801008048b0f90000a1f80500",
+      "new_hex": "0bf0e4f900f007b800bf00bf00bf00bf00bf00bf00bf",
+      "module": "phase3_motion",
+      "reason": "Wireless atomic s16 snap hook at 0x018068"
+    },
+    {
+      "address": "0x000180EE",
+      "length": 48,
+      "old_hex": "012815d1002060490880604908805c4908705a48401c0021016081808171012005f0f9f85348007820f0040051490870",
+      "new_hex": "0bf0aef900f014b800bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf",
+      "module": "phase3_motion",
+      "reason": "Wireless atomic subtract post-TX hook at 0x0180EE"
+    },
+    {
+      "address": "0x000182BC",
+      "length": 28,
+      "old_hex": "6c48007888706b480088000ac8706a480078087168480088000a4871",
+      "new_hex": "0bf0eaf800f00ab800bf00bf00bf00bf00bf00bf00bf00bf00bf00bf",
+      "module": "phase3_motion",
+      "reason": "Wired USB atomic s16 snap hook at 0x0182BC (preserves r1=0x200040C2)"
+    },
+    {
+      "address": "0x000182EE",
+      "length": 56,
+      "old_hex": "d4b95b48401c002101608180817100205b4908705e4908705b490880594908805248007820f00400504908700020f2f730fb0020f2f732fb",
+      "new_hex": "20460bf0dcf800f017b800bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf",
+      "module": "phase3_motion",
+      "reason": "Wired USB atomic subtract post-TX hook at 0x0182EE"
+    },
+    {
+      "address": "0x00019A32",
+      "length": 28,
+      "old_hex": "4b480078887049480088000ac87046480078087145480088000a4871",
+      "new_hex": "09f055fd00f00ab800bf00bf00bf00bf00bf00bf00bf00bf00bf00bf",
+      "module": "phase3_motion",
+      "reason": "BLE atomic s16 snap hook at 0x019A32 (preserves r1=0x200040C2)"
+    },
+    {
+      "address": "0x00019A6E",
+      "length": 32,
+      "old_hex": "70b90020384908703849087038490880384908803248007820f0040030490870",
+      "new_hex": "09f040fd00f00cb800bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf",
+      "module": "phase3_motion",
+      "reason": "BLE atomic subtract post-TX hook at 0x019A6E"
+    },
+    {
+      "address": "0x0001D1A0",
+      "length": 20,
+      "old_hex": "4a48b0f90000adf800004948b0f90000adf80200",
+      "new_hex": "684606f0b2f900f005b800bf00bf00bf00bf00bf",
+      "module": "phase3_motion",
+      "reason": "IRQ20 atomic s16 snap hook at 0x01D1A0"
+    },
+    {
+      "address": "0x0001D1BE",
+      "length": 10,
+      "old_hex": "00204349088041490880",
+      "new_hex": "06f0acf900bf00bf00bf",
+      "module": "phase3_motion",
+      "reason": "IRQ20 atomic subtract commit path 1 at 0x01D1BE"
+    },
+    {
+      "address": "0x0001D2AA",
+      "length": 20,
+      "old_hex": "4ff0000cdff82080a8f800c0dff81480a8f800c0",
+      "new_hex": "06f036f900f008b800bf00bf00bf00bf00bf00bf",
+      "module": "phase3_motion",
+      "reason": "IRQ20 atomic subtract commit path 2 at 0x01D2AA"
+    },
+    {
+      "address": "0x00014582",
+      "length": 12,
+      "old_hex": "b8f1000f02d0207c002846d1",
+      "new_hex": "21460ef0cbff002847d100bf",
+      "module": "phase3_motion",
+      "reason": "Wired EP81 active-queue overwrite guard at 0x014582"
+    },
+    {
+      "address": "0x0000B29A",
+      "length": 4,
+      "old_hex": "0ef09bfb",
+      "new_hex": "18f0a2f9",
+      "module": "phase3_motion",
+      "reason": "BLE thread TX ownership wrapper at 0x00B29A -> 0x0199D4"
+    },
+    {
+      "address": "0x00008842",
+      "length": 6,
+      "old_hex": "002025490860",
+      "new_hex": "1af0e5ff00bf",
+      "module": "phase3_plock",
+      "reason": "Capture TIMER1->CC[2] at IRQ9 entry (0x008842) before 0x01DF40 poll latency"
+    },
+    {
+      "address": "0x0000887E",
+      "length": 4,
+      "old_hex": "15f05ffb",
+      "new_hex": "1af0cdfe",
+      "module": "phase3_plock",
+      "reason": "IRQ9 stationary/active tracker hook at 0x00887E"
+    },
+    {
+      "address": "0x00008882",
+      "length": 4,
+      "old_hex": "16f01dff",
+      "new_hex": "1af0f0fe",
+      "module": "phase3_plock",
+      "reason": "IRQ9 TIMER1 plock hook at 0x008882"
+    },
+    {
+      "address": "0x0000F2D8",
+      "length": 4,
+      "old_hex": "10f00afa",
+      "new_hex": "14f0a1fa",
+      "module": "phase3_plock",
+      "reason": "Flash RF/timer pause hook at 0x00F2D8"
+    },
+    {
+      "address": "0x0000F2FE",
+      "length": 4,
+      "old_hex": "10f00dfa",
+      "new_hex": "14f09ffa",
+      "module": "phase3_plock",
+      "reason": "Flash RF/timer resume hook at 0x00F2FE"
+    },
+    {
+      "address": "0x000180EA",
+      "length": 4,
+      "old_hex": "09f0adf9",
+      "new_hex": "0af09dfe",
+      "module": "phase3plus_abs",
+      "reason": "Convert wireless Queue 2 motion payload to u16 ABS when P3_FLAG_MOUSE_ABS is enabled"
+    },
+    {
+      "address": "0x0001B334",
+      "length": 6,
+      "old_hex": "baf1010f24dd",
+      "new_hex": "07f0bffd20b3",
+      "module": "phase3plus_abs",
+      "reason": "Force sample_cnt=1 when Queue 2 has mixed REL/ABS samples"
+    },
+    {
+      "address": "0x0001B3EC",
+      "length": 6,
+      "old_hex": "022180f8db10",
+      "new_hex": "07f07dfd00bf",
+      "module": "phase3plus_abs",
+      "reason": "Emit RF b0=0x0A for tagged ABS packets and b0=0x02 for REL packets"
+    },
+    {
+      "address": "0x00006628",
+      "length": 4,
+      "old_hex": "0c480068",
+      "new_hex": "1df063b9",
+      "module": "phase3plus_w2",
+      "reason": "Wrap IRQ6 (0x00006628) for conditional eager-wake -> 0x0001DF40 when direct_motion=1"
+    },
+    {
+      "address": "0x0001C42C",
+      "length": 4,
+      "old_hex": "90f81002",
+      "new_hex": "07f08cfa",
+      "module": "phase3plus_w2",
+      "reason": "Configurable lifted press_defer window (stock default 20 ms)"
+    },
+    {
+      "address": "0x0001C454",
+      "length": 6,
+      "old_hex": "102004eb4401",
+      "new_hex": "07f086fa00bf",
+      "module": "phase3plus_w2",
+      "reason": "Configurable landing button lock window (stock default 16 ms)"
+    },
+    {
+      "address": "0x0001D4AC",
+      "length": 4,
+      "old_hex": "70bd0000",
+      "new_hex": "06f068ba",
+      "module": "phase3plus_w2",
+      "reason": "Preserve raw ID53 0x18:0x7A override across stock LOD setter 0x0001D388"
+    },
+    {
+      "address": "0x0001923E",
+      "length": 8,
+      "old_hex": "a3201849087000bf",
+      "new_hex": "0af0f1bd00bf00bf",
+      "module": "group5",
+      "reason": "H2: Redirect Family A switch default (buf[4] >= 5) to group5_trampoline"
+    },
+    {
+      "address": "0x0001D588",
+      "length": 4,
+      "old_hex": "8dd50100",
+      "new_hex": "633d0200",
+      "module": "group5",
+      "reason": "H5: Wrap cooperative mode worker 0x1D58D to re-apply ID53 overrides when done==1"
+    },
+    {
+      "address": "0x0001D00A",
+      "length": 4,
+      "old_hex": "bde8f883",
+      "new_hex": "06f0b2be",
+      "module": "group5",
+      "reason": "H6: Apply ID53 overrides on sensor powerup & wake (0x1D00A)"
+    },
+    {
+      "address": "0x0001D570",
+      "length": 4,
+      "old_hex": "70bd0000",
+      "new_hex": "06f003bc",
+      "module": "group5",
+      "reason": "H7: Re-apply ID53 overrides after immediate mode switch (0x1D570, R5!=0)"
+    }
+  ],
+  "verified_fingerprints": [
+    {
+      "address": "0x00006000",
+      "bytes": 64,
+      "sha256": "dea09ccd14118fa0d4e6f1d474a8e328173d90e9d878df7d61bb09fe6dfe885a",
+      "label": "vector_table_0x6000_0x603f"
+    },
+    {
+      "address": "0x0000600C",
+      "bytes": 16,
+      "sha256": "46c09b8cb675f91bada99bc4c64d2d7be7b5d18c1984c6c20719ba8e52b429ea",
+      "label": "H1_fault_vectors_0x600c"
+    },
+    {
+      "address": "0x000064A4",
+      "bytes": 28,
+      "sha256": "4d48ec6a2baefd7addc83405135f292cf81e6fe699f86b865be7b5c9473eddc1",
+      "label": "default_stubs_0x64a4"
+    },
+    {
+      "address": "0x0000904C",
+      "bytes": 40,
+      "sha256": "c238b0bc15db238652d4821aa92112eed540875c64c8f33b29516c6aba669d77",
+      "label": "nvic_system_reset_0x904c"
+    },
+    {
+      "address": "0x00017C80",
+      "bytes": 8,
+      "sha256": "43fea64586fad67b91be8144d002e15b8037a432a9d4378d6deec9f53a909170",
+      "label": "stock_0xA55AA55A_0x2003FFFC_0x17c80"
+    },
+    {
+      "address": "0x0000600C",
+      "bytes": 16,
+      "sha256": "46c09b8cb675f91bada99bc4c64d2d7be7b5d18c1984c6c20719ba8e52b429ea",
+      "label": "edit:recovery:H1: Route HardFault/MemManage/BusFault/UsageFault to Bootloader eject seat"
+    },
+    {
+      "address": "0x00018AD8",
+      "bytes": 44,
+      "sha256": "36c3f9e0b0bdb48326b959953f2b5cda02d06d17a4e885a38d5084f72ebaf7e2",
+      "label": "family_b_05_0x18ad8"
+    },
+    {
+      "address": "0x00018AF8",
+      "bytes": 4,
+      "sha256": "02a5fa3e88173c436e3354353ad0356117ab0fd2b87a6a19b0678c36b136b9a7",
+      "label": "H3_debounce_05_bl_0x18af8"
+    },
+    {
+      "address": "0x0000C1E8",
+      "bytes": 122,
+      "sha256": "196ff2bf9869570343eaece6545c75f5afc4f9888c52c65bb3f02dda81e174a6",
+      "label": "button_thresholds_load_profile_0xc1e8"
+    },
+    {
+      "address": "0x00018AF8",
+      "bytes": 4,
+      "sha256": "02a5fa3e88173c436e3354353ad0356117ab0fd2b87a6a19b0678c36b136b9a7",
+      "label": "edit:debounce_mod:H3: Family B 0x05 immediate 0xC1E8 threshold reload"
+    },
+    {
+      "address": "0x0001301A",
+      "bytes": 4,
+      "sha256": "cb37008e40637659d231fa73c40605e8fa0f737660a60bb059158e7e7325d292",
+      "label": "H4_startup_load_call_0x1301a"
+    },
+    {
+      "address": "0x0001312E",
+      "bytes": 4,
+      "sha256": "7eece849a49312c8e1d090a45eea81410b27cd9c59df2cc13b6906e975cc0cf2",
+      "label": "H8_persist_call_0x1312e"
+    },
+    {
+      "address": "0x0000C990",
+      "bytes": 62,
+      "sha256": "8851b8f06b332c9975b45af6625e2dd0ffe68d88ae607b2a37901cb7193f241d",
+      "label": "crc16_ccitt_0xc990"
+    },
+    {
+      "address": "0x0000F2BC",
+      "bytes": 34,
+      "sha256": "7df2fb25a4205bb66b1683fde4ee307597a46c7b4544ad2ecd48e291dca4cf64",
+      "label": "flash_rf_pause_0xf2bc"
+    },
+    {
+      "address": "0x0000F2DE",
+      "bytes": 38,
+      "sha256": "244036176fee7f0a35ef62c2c6c865e8315e7e518d18e51166da180974daf82c",
+      "label": "flash_rf_resume_0xf2de"
+    },
+    {
+      "address": "0x0000F304",
+      "bytes": 82,
+      "sha256": "65d60e64f87b74a7899a0a12fd44ab53cdabf57b03528054455f9bef8533283e",
+      "label": "flash_erase_0xf304"
+    },
+    {
+      "address": "0x0000F356",
+      "bytes": 100,
+      "sha256": "cf074571013376b461ad61ec241c2bbc250fad68519ccbb9f46e7b293c64fe16",
+      "label": "flash_write_0xf356"
+    },
+    {
+      "address": "0x0001301A",
+      "bytes": 4,
+      "sha256": "cb37008e40637659d231fa73c40605e8fa0f737660a60bb059158e7e7325d292",
+      "label": "edit:persistence:H4: Initialize 0x2003F000 Phase 2 state and load CRC16 page 0xEA000 after 0x111E0"
+    },
+    {
+      "address": "0x0001312E",
+      "bytes": 4,
+      "sha256": "7eece849a49312c8e1d090a45eea81410b27cd9c59df2cc13b6906e975cc0cf2",
+      "label": "edit:persistence:H8: Service Phase 2 pending_save after stock 0x177CC"
+    },
+    {
+      "address": "0x0001DEFE",
+      "bytes": 4,
+      "sha256": "753d58eba4ca6d0d73b56d33f7649bd0cebf87134448b0815fd3a2822b75c177",
+      "label": "spim3_acc_accum_call_0x1defe"
+    },
+    {
+      "address": "0x00018068",
+      "bytes": 22,
+      "sha256": "7a73080cff37618fa9ba92e574e80a26ab835bd2ac1e6a5f5658140acba113da",
+      "label": "wireless_motion_snap_0x18068"
+    },
+    {
+      "address": "0x000180EE",
+      "bytes": 48,
+      "sha256": "26515ea4a0c8003c6eeb5a8eb632b6cd812ff993a46f049b974e30a4b1a416ea",
+      "label": "wireless_motion_post_tx_0x180ee"
+    },
+    {
+      "address": "0x000182BC",
+      "bytes": 28,
+      "sha256": "66efee4b179a0e1ec97c19b6e429392752a92505e5878a1a3ef45bfb6a7a432f",
+      "label": "usb_motion_snap_0x182bc"
+    },
+    {
+      "address": "0x000182EE",
+      "bytes": 56,
+      "sha256": "7f563b6f6c4cbfd99e9e73e5bce20ea5547a8a86c90b0dbfc7a1bd75d9826fc4",
+      "label": "usb_motion_post_tx_0x182ee"
+    },
+    {
+      "address": "0x00019A32",
+      "bytes": 28,
+      "sha256": "a34532bb9973777b7b283868165e6914a2fba30aca20718f26b368b6a37cf94d",
+      "label": "ble_motion_snap_0x19a32"
+    },
+    {
+      "address": "0x00019A6E",
+      "bytes": 32,
+      "sha256": "62b3c66efc06477c215ab56987afc31e51adc47f4660de78753f73326c38c1c7",
+      "label": "ble_motion_post_tx_0x19a6e"
+    },
+    {
+      "address": "0x0000B29A",
+      "bytes": 4,
+      "sha256": "c50fb3dd69c18d376e7d7416e74cb1ed1f8fbddb545884a965b0a922bae26539",
+      "label": "ble_loop_motion_call_0x0b29a"
+    },
+    {
+      "address": "0x0001D1A0",
+      "bytes": 20,
+      "sha256": "ff0da81eed270048f5ad8f93edeffb87176e2d3e57e87e39b9cc6e483aa449d8",
+      "label": "irq20_motion_snap_0x1d1a0"
+    },
+    {
+      "address": "0x0001D1BE",
+      "bytes": 10,
+      "sha256": "8ae3f04a8d1d26544b515b97911b14c0a5434d4900be84fc5e280fede7e7a065",
+      "label": "irq20_motion_commit1_0x1d1be"
+    },
+    {
+      "address": "0x0001D2AA",
+      "bytes": 20,
+      "sha256": "dd9e9c2e87bfecba4d015c4e32c172e55f0706a422b26597b217e24ad7a3b63e",
+      "label": "irq20_motion_commit2_0x1d2aa"
+    },
+    {
+      "address": "0x00014582",
+      "bytes": 12,
+      "sha256": "862624ad6dd7c8d66febb90dd86eb474db37f3e1ed5b9d6ef0306d674ddbf963",
+      "label": "usb_ep_guard_0x14582"
+    },
+    {
+      "address": "0x000222AC",
+      "bytes": 20,
+      "sha256": "dd982cd506a8f97f7003ee9c089d0caa797f1b3446eb0392f90cdf7e254b5346",
+      "label": "ep81_descriptor_0x222ac"
+    },
+    {
+      "address": "0x0001DAD8",
+      "bytes": 8,
+      "sha256": "95d901db7a26b7e1384edf6833d44cf83039b410b24ec5366d92b943d229b225",
+      "label": "acc_accum_entry_0x1dad8"
+    },
+    {
+      "address": "0x0001D304",
+      "bytes": 8,
+      "sha256": "62d74b326d9e6e46da8d6c534c6ab2b2b3cd8fb9d4ba8648d03e5795f91730b0",
+      "label": "wl_tx_clear_entry_0x1d304"
+    },
+    {
+      "address": "0x0000A980",
+      "bytes": 8,
+      "sha256": "289389d9f46cf9de1d2e637ee760136e7a82f8e924a17960e3a83dbc41be2aec",
+      "label": "usb_ep_unlock_0x0a980"
+    },
+    {
+      "address": "0x0000A98A",
+      "bytes": 8,
+      "sha256": "db27ba5e2bb2d888022304d3524dbbc3baa340ca07ad2e80619a9369be600bc6",
+      "label": "usb_ep_unlock_0x0a98a"
+    },
+    {
+      "address": "0x0001F6C0",
+      "bytes": 8,
+      "sha256": "473649beefe5bafbc3ece73d5b9d9700e7b8cfb2f56d2985a8d016fa64463a9e",
+      "label": "get_transport_mode_0x1f6c0"
+    },
+    {
+      "address": "0x0000B298",
+      "bytes": 8,
+      "sha256": "6a91e7f3f716bd273b80099b3fd9109724d3bdd2fcfb4682fd3753c9f66217b3",
+      "label": "ble_loop_entry_0x0b298"
+    },
+    {
+      "address": "0x0001DEFE",
+      "bytes": 4,
+      "sha256": "753d58eba4ca6d0d73b56d33f7649bd0cebf87134448b0815fd3a2822b75c177",
+      "label": "edit:phase3_motion:SPIM3 sample hook (0x01DEFE -> p3_spim3_hook -> 0x01DAD8)"
+    },
+    {
+      "address": "0x00018068",
+      "bytes": 22,
+      "sha256": "7a73080cff37618fa9ba92e574e80a26ab835bd2ac1e6a5f5658140acba113da",
+      "label": "edit:phase3_motion:Wireless atomic s16 snap hook at 0x018068"
+    },
+    {
+      "address": "0x000180EE",
+      "bytes": 48,
+      "sha256": "26515ea4a0c8003c6eeb5a8eb632b6cd812ff993a46f049b974e30a4b1a416ea",
+      "label": "edit:phase3_motion:Wireless atomic subtract post-TX hook at 0x0180EE"
+    },
+    {
+      "address": "0x000182BC",
+      "bytes": 28,
+      "sha256": "66efee4b179a0e1ec97c19b6e429392752a92505e5878a1a3ef45bfb6a7a432f",
+      "label": "edit:phase3_motion:Wired USB atomic s16 snap hook at 0x0182BC (preserves r1=0x200040C2)"
+    },
+    {
+      "address": "0x000182EE",
+      "bytes": 56,
+      "sha256": "7f563b6f6c4cbfd99e9e73e5bce20ea5547a8a86c90b0dbfc7a1bd75d9826fc4",
+      "label": "edit:phase3_motion:Wired USB atomic subtract post-TX hook at 0x0182EE"
+    },
+    {
+      "address": "0x00019A32",
+      "bytes": 28,
+      "sha256": "a34532bb9973777b7b283868165e6914a2fba30aca20718f26b368b6a37cf94d",
+      "label": "edit:phase3_motion:BLE atomic s16 snap hook at 0x019A32 (preserves r1=0x200040C2)"
+    },
+    {
+      "address": "0x00019A6E",
+      "bytes": 32,
+      "sha256": "62b3c66efc06477c215ab56987afc31e51adc47f4660de78753f73326c38c1c7",
+      "label": "edit:phase3_motion:BLE atomic subtract post-TX hook at 0x019A6E"
+    },
+    {
+      "address": "0x0001D1A0",
+      "bytes": 20,
+      "sha256": "ff0da81eed270048f5ad8f93edeffb87176e2d3e57e87e39b9cc6e483aa449d8",
+      "label": "edit:phase3_motion:IRQ20 atomic s16 snap hook at 0x01D1A0"
+    },
+    {
+      "address": "0x0001D1BE",
+      "bytes": 10,
+      "sha256": "8ae3f04a8d1d26544b515b97911b14c0a5434d4900be84fc5e280fede7e7a065",
+      "label": "edit:phase3_motion:IRQ20 atomic subtract commit path 1 at 0x01D1BE"
+    },
+    {
+      "address": "0x0001D2AA",
+      "bytes": 20,
+      "sha256": "dd9e9c2e87bfecba4d015c4e32c172e55f0706a422b26597b217e24ad7a3b63e",
+      "label": "edit:phase3_motion:IRQ20 atomic subtract commit path 2 at 0x01D2AA"
+    },
+    {
+      "address": "0x00014582",
+      "bytes": 12,
+      "sha256": "862624ad6dd7c8d66febb90dd86eb474db37f3e1ed5b9d6ef0306d674ddbf963",
+      "label": "edit:phase3_motion:Wired EP81 active-queue overwrite guard at 0x014582"
+    },
+    {
+      "address": "0x0000B29A",
+      "bytes": 4,
+      "sha256": "c50fb3dd69c18d376e7d7416e74cb1ed1f8fbddb545884a965b0a922bae26539",
+      "label": "edit:phase3_motion:BLE thread TX ownership wrapper at 0x00B29A -> 0x0199D4"
+    },
+    {
+      "address": "0x0000887E",
+      "bytes": 4,
+      "sha256": "df916e688239f83ffb316ee6fa080d42559dd7dcdc6de2fd5c49d9708f08638e",
+      "label": "irq9_stationary_call_0x0887e"
+    },
+    {
+      "address": "0x00008882",
+      "bytes": 4,
+      "sha256": "e3b37435b13259ac611f2bc8f1bb3e347d81a8d99d582252f8f1987870ba1bd7",
+      "label": "irq9_plock_mode_call_0x08882"
+    },
+    {
+      "address": "0x0000F2D8",
+      "bytes": 4,
+      "sha256": "80970dc6d836439e56b95d58348befb9c5141f733cfab8f6e7d78bf74655a609",
+      "label": "flash_pause_timer_call_0x0f2d8"
+    },
+    {
+      "address": "0x0000F2FE",
+      "bytes": 4,
+      "sha256": "059200c646ff3abae02d9b646151fcb5a647d68282ca4a45ef9552e773139a12",
+      "label": "flash_resume_timer_call_0x0f2fe"
+    },
+    {
+      "address": "0x0001F6C0",
+      "bytes": 8,
+      "sha256": "473649beefe5bafbc3ece73d5b9d9700e7b8cfb2f56d2985a8d016fa64463a9e",
+      "label": "get_transport_mode_0x1f6c0"
+    },
+    {
+      "address": "0x0001F6F0",
+      "bytes": 8,
+      "sha256": "275ced26239b916f74b6f852b1748fb4f7713127e50205b6e6ade4e8bf68f4f5",
+      "label": "timer_pause_0x1f6f0"
+    },
+    {
+      "address": "0x0001F71C",
+      "bytes": 8,
+      "sha256": "2ddff7e4c1302ff70ecf24f11c35b8c2a1a5a97aae46f220bc3047a296f3777c",
+      "label": "timer_resume_0x1f71c"
+    },
+    {
+      "address": "0x0001DF40",
+      "bytes": 8,
+      "sha256": "0ecd9e1bed879f325302694a59cd1114fabeec81485e7ae5d3866a970b048cd1",
+      "label": "irq9_motion_tick_0x1df40"
+    },
+    {
+      "address": "0x00008842",
+      "bytes": 6,
+      "sha256": "c98b3dfc9b171fdcb5a3cef44a1b7855634324a4f332765e7c15f0b7493c0d8b",
+      "label": "irq9_entry_clear_0x08842"
+    },
+    {
+      "address": "0x00008842",
+      "bytes": 6,
+      "sha256": "c98b3dfc9b171fdcb5a3cef44a1b7855634324a4f332765e7c15f0b7493c0d8b",
+      "label": "edit:phase3_plock:Capture TIMER1->CC[2] at IRQ9 entry (0x008842) before 0x01DF40 poll latency"
+    },
+    {
+      "address": "0x0000887E",
+      "bytes": 4,
+      "sha256": "df916e688239f83ffb316ee6fa080d42559dd7dcdc6de2fd5c49d9708f08638e",
+      "label": "edit:phase3_plock:IRQ9 stationary/active tracker hook at 0x00887E"
+    },
+    {
+      "address": "0x00008882",
+      "bytes": 4,
+      "sha256": "e3b37435b13259ac611f2bc8f1bb3e347d81a8d99d582252f8f1987870ba1bd7",
+      "label": "edit:phase3_plock:IRQ9 TIMER1 plock hook at 0x008882"
+    },
+    {
+      "address": "0x0000F2D8",
+      "bytes": 4,
+      "sha256": "80970dc6d836439e56b95d58348befb9c5141f733cfab8f6e7d78bf74655a609",
+      "label": "edit:phase3_plock:Flash RF/timer pause hook at 0x00F2D8"
+    },
+    {
+      "address": "0x0000F2FE",
+      "bytes": 4,
+      "sha256": "059200c646ff3abae02d9b646151fcb5a647d68282ca4a45ef9552e773139a12",
+      "label": "edit:phase3_plock:Flash RF/timer resume hook at 0x00F2FE"
+    },
+    {
+      "address": "0x000180EA",
+      "bytes": 4,
+      "sha256": "7127a94f207497c0367f62f61d69d72753a05eb205e67131cfe5a5ed5683148a",
+      "label": "wl_queue2_push_call_0x180ea"
+    },
+    {
+      "address": "0x0001B334",
+      "bytes": 6,
+      "sha256": "92a5b9a32d92489413a034f255c7f86fdfc7e37b56dc66e2860571bf18e41bc2",
+      "label": "rf_builder_sample2_chk_0x1b334"
+    },
+    {
+      "address": "0x0001B3EC",
+      "bytes": 6,
+      "sha256": "ed35613bd381ad5ffe15a07cf52d7360b928b4691a5b18b2d2e5e75958679e12",
+      "label": "rf_builder_b0_type2_0x1b3ec"
+    },
+    {
+      "address": "0x00021448",
+      "bytes": 8,
+      "sha256": "062fbe05efa295d739c0639c0540f9d083323efce900ec15d3436b684f0574fd",
+      "label": "queue_push_21448"
+    },
+    {
+      "address": "0x000180EA",
+      "bytes": 4,
+      "sha256": "7127a94f207497c0367f62f61d69d72753a05eb205e67131cfe5a5ed5683148a",
+      "label": "edit:phase3plus_abs:Convert wireless Queue 2 motion payload to u16 ABS when P3_FLAG_MOUSE_ABS is enabled"
+    },
+    {
+      "address": "0x0001B334",
+      "bytes": 6,
+      "sha256": "92a5b9a32d92489413a034f255c7f86fdfc7e37b56dc66e2860571bf18e41bc2",
+      "label": "edit:phase3plus_abs:Force sample_cnt=1 when Queue 2 has mixed REL/ABS samples"
+    },
+    {
+      "address": "0x0001B3EC",
+      "bytes": 6,
+      "sha256": "ed35613bd381ad5ffe15a07cf52d7360b928b4691a5b18b2d2e5e75958679e12",
+      "label": "edit:phase3plus_abs:Emit RF b0=0x0A for tagged ABS packets and b0=0x02 for REL packets"
+    },
+    {
+      "address": "0x00006628",
+      "bytes": 4,
+      "sha256": "56a6b25feb805d1e865fd2adf1eda37148062558b6a7d0eef9d2dadcc72007e7",
+      "label": "irq6_entry_0x06628"
+    },
+    {
+      "address": "0x0001DF40",
+      "bytes": 16,
+      "sha256": "cdc94719502f1710cc4a569e2d13335693fe339df3b58186bc1cd8eb10dd695d",
+      "label": "sensor_poll_0x1df40"
+    },
+    {
+      "address": "0x0001D3D6",
+      "bytes": 34,
+      "sha256": "8332f1533ca22ad8e811936cd2524a39db20f7513ceec7b6051928d23b9b1303",
+      "label": "lod_id53_0x1d3d6"
+    },
+    {
+      "address": "0x0001D4AC",
+      "bytes": 4,
+      "sha256": "6733324b5ce7bfbe415217fb69ba8b17a6c76e84b0ccf330b36699d3ce58ca35",
+      "label": "lod_set_tail_0x1d4ac"
+    },
+    {
+      "address": "0x0001C42C",
+      "bytes": 4,
+      "sha256": "2a181fff054b56ea239fc65eb8a61404449f1224af2d436c5ed6a3bb995ea945",
+      "label": "anti_slam_lifted_0x1c42c"
+    },
+    {
+      "address": "0x0001C454",
+      "bytes": 6,
+      "sha256": "4586c3f737c652bf3f01ffb82ccf7fa56288af1e2c1274daf072b66a27efd7a3",
+      "label": "anti_slam_landing_0x1c454"
+    },
+    {
+      "address": "0x00006628",
+      "bytes": 4,
+      "sha256": "56a6b25feb805d1e865fd2adf1eda37148062558b6a7d0eef9d2dadcc72007e7",
+      "label": "edit:phase3plus_w2:Wrap IRQ6 (0x00006628) for conditional eager-wake -> 0x0001DF40 when direct_motion=1"
+    },
+    {
+      "address": "0x0001C42C",
+      "bytes": 4,
+      "sha256": "2a181fff054b56ea239fc65eb8a61404449f1224af2d436c5ed6a3bb995ea945",
+      "label": "edit:phase3plus_w2:Configurable lifted press_defer window (stock default 20 ms)"
+    },
+    {
+      "address": "0x0001C454",
+      "bytes": 6,
+      "sha256": "4586c3f737c652bf3f01ffb82ccf7fa56288af1e2c1274daf072b66a27efd7a3",
+      "label": "edit:phase3plus_w2:Configurable landing button lock window (stock default 16 ms)"
+    },
+    {
+      "address": "0x0001D4AC",
+      "bytes": 4,
+      "sha256": "6733324b5ce7bfbe415217fb69ba8b17a6c76e84b0ccf330b36699d3ce58ca35",
+      "label": "edit:phase3plus_w2:Preserve raw ID53 0x18:0x7A override across stock LOD setter 0x0001D388"
+    },
+    {
+      "address": "0x0001920E",
+      "bytes": 58,
+      "sha256": "9e5434d7e93777089a70c3bacd4ef1d6310de3928117ace17df7ca91da3bcdef",
+      "label": "family_a_switch_0x1920e"
+    },
+    {
+      "address": "0x0001923E",
+      "bytes": 8,
+      "sha256": "de5ed26d339126bde94e397a61dfaf5c38a83cb07978836f6ca3b198ee0b80aa",
+      "label": "H2_group5_default_0x1923e"
+    },
+    {
+      "address": "0x00019246",
+      "bytes": 106,
+      "sha256": "e16fe53ec2c9177413a280da4aab37b8f86f3a11604aeefc458095ce14960a73",
+      "label": "family_a_common_exit_0x19246"
+    },
+    {
+      "address": "0x0001E108",
+      "bytes": 66,
+      "sha256": "48f5728c8665dd5e545da32154488e1a3c9cc0309016988ef0fd873d2cdc4dec",
+      "label": "worker_register_0x1e108"
+    },
+    {
+      "address": "0x0001E150",
+      "bytes": 84,
+      "sha256": "f68ab15378b86331f22cb53450741da830018db680f02982747b82965551da60",
+      "label": "worker_kick_0x1e150"
+    },
+    {
+      "address": "0x0001E1E0",
+      "bytes": 68,
+      "sha256": "9952b6b4d2cbdc34ae3eb7c3eb6242ae4adb50a1706b43774e11f9dd782be222",
+      "label": "worker_poll_0x1e1e0"
+    },
+    {
+      "address": "0x0001F190",
+      "bytes": 88,
+      "sha256": "ceadb1f8b1f4e1ee1c60ed81a993973f167f67a757de4e989a8f852356ccae54",
+      "label": "spi_read_reg_0x1f190"
+    },
+    {
+      "address": "0x0001F1F4",
+      "bytes": 72,
+      "sha256": "73b509d2bf293d4effc7676b61bccdd574635cd60ecf368dfead176b62e0137e",
+      "label": "spi_write_reg_0x1f1f4"
+    },
+    {
+      "address": "0x0001D588",
+      "bytes": 4,
+      "sha256": "453176a89a325cfed97a9cf653b1b5d257111f3d4c587d4610cd39576d7e6ccc",
+      "label": "H5_mode_worker_ptr_0x1d588"
+    },
+    {
+      "address": "0x0001D570",
+      "bytes": 4,
+      "sha256": "6733324b5ce7bfbe415217fb69ba8b17a6c76e84b0ccf330b36699d3ce58ca35",
+      "label": "H7_mode_apply_tail_0x1d570"
+    },
+    {
+      "address": "0x0001D00A",
+      "bytes": 4,
+      "sha256": "147d094420bf6ae8b826ec3c7da0ee3b1116256871607800eb9887e1ffb81366",
+      "label": "H6_powerup_tail_0x1d00a"
+    },
+    {
+      "address": "0x0001923E",
+      "bytes": 8,
+      "sha256": "de5ed26d339126bde94e397a61dfaf5c38a83cb07978836f6ca3b198ee0b80aa",
+      "label": "edit:group5:H2: Redirect Family A switch default (buf[4] >= 5) to group5_trampoline"
+    },
+    {
+      "address": "0x0001D588",
+      "bytes": 4,
+      "sha256": "453176a89a325cfed97a9cf653b1b5d257111f3d4c587d4610cd39576d7e6ccc",
+      "label": "edit:group5:H5: Wrap cooperative mode worker 0x1D58D to re-apply ID53 overrides when done==1"
+    },
+    {
+      "address": "0x0001D00A",
+      "bytes": 4,
+      "sha256": "147d094420bf6ae8b826ec3c7da0ee3b1116256871607800eb9887e1ffb81366",
+      "label": "edit:group5:H6: Apply ID53 overrides on sensor powerup & wake (0x1D00A)"
+    },
+    {
+      "address": "0x0001D570",
+      "bytes": 4,
+      "sha256": "6733324b5ce7bfbe415217fb69ba8b17a6c76e84b0ccf330b36699d3ce58ca35",
+      "label": "edit:group5:H7: Re-apply ID53 overrides after immediate mode switch (0x1D570, R5!=0)"
+    }
+  ],
+  "phase": "phase3plus",
+  "profile": "phase3plus",
+  "extended_flash_range_unverified_by_bootloader": true,
+  "target_name": "Fenrir+035-8K Mouse APP v1.00.39.00",
+  "sensor_branch_target": "ID53 (PAW3950)",
+  "fps_preset_count": 38,
+  "cave_budget": {
+    "start": "0x00022A0C",
+    "end_exclusive": "0x00025000",
+    "capacity_bytes": 9716,
+    "used_bytes": 5980,
+    "remaining_bytes": 3736,
+    "spans": [
+      {
+        "label": "app_tail_cave",
+        "start": "0x00022A0C",
+        "end_exclusive": "0x00023000",
+        "bytes": 1524
+      },
+      {
+        "label": "phase3_ext_cave",
+        "start": "0x00023000",
+        "end_exclusive": "0x00025000",
+        "bytes": 8192
+      }
+    ]
+  },
+  "guarantees": {
+    "boot_spine_preserved": "Reset_Handler -> USB init -> 0x13008 -> 0x18494 intact",
+    "default_overrides_off": true,
+    "default_phase3plus_toggles_off": [
+      "direct_motion",
+      "plock_enable",
+      "fix_a",
+      "mouse_abs"
+    ],
+    "default_phase3plus_fixes_on": [
+      "atomic_accum",
+      "queue_guard"
+    ],
+    "stock_nv_untouched": [
+      "0x50000",
+      "0x8C000",
+      "0x90000..0xDFFFF",
+      "0xEB000",
+      "0xEC000"
+    ],
+    "phase2_nv_page": "0x000EA000 (v1->v2->v3 backward-compatible)",
+    "phase3_ram_range": "0x2003F040..0x2003F0FF",
+    "capstone_all_verified": true
+  },
+  "capstone_summary": {
+    "all_verified": true,
+    "block_count": 25,
+    "branch_patch_count": 14,
+    "total_verified_instructions": 2451
+  },
+  "modules": {
+    "recovery": {
+      "enabled": true,
+      "handler_address": "0x00022A0C",
+      "thumb_vector": "0x00022A0D",
+      "magic_addr": "0x2003FFFC",
+      "magic_value": "0xA55AA55A",
+      "reset_fn": "0x0000904C",
+      "patched_vectors": [
+        "HardFault(0x600C)",
+        "MemManage(0x6010)",
+        "BusFault(0x6014)",
+        "UsageFault(0x6018)"
+      ],
+      "protected_untouched": [
+        "InitialSP(0x6000)",
+        "Reset(0x6004)",
+        "NMI(0x6008)",
+        "SVC(0x602C)"
+      ]
+    },
+    "debounce": {
+      "enabled": true,
+      "hook_site": "0x00018AF8",
+      "helper_address": "0x00022A24",
+      "reload_fn": "0x0000C1E8",
+      "persisted_ram": "0x200043FE..0x20004401",
+      "live_ram": "0x20003A65..0x20003A6A"
+    },
+    "phase3_diag": {
+      "enabled": true,
+      "base": "0x00022A30",
+      "ram_base": "0x2003F040",
+      "ram_bytes": 192,
+      "p3_ram_init": "0x00022A30",
+      "p3_diag_inc": "0x00022A6C",
+      "p3_diag_reset": "0x00022A82",
+      "p3_group5_dispatch": "0x00022AC2"
+    },
+    "persistence": {
+      "enabled": true,
+      "flash_page": "0x000EA000",
+      "flash_page_size": 4096,
+      "ram_state_base": "0x2003F000",
+      "ram_state_bytes": 64,
+      "record_magic": "FNR2",
+      "record_version": 4,
+      "record_bytes": 32,
+      "crc_fn": "0x0000C990",
+      "code_base": "0x00023000",
+      "symbols": {
+        "valid_fps_tuple": "0x00023000",
+        "cfg_validate": "0x00023018",
+        "cfg_load_page": "0x00023104",
+        "cfg_save_page": "0x00023210",
+        "cfg_reset_page": "0x00023296",
+        "startup_hook": "0x00023352",
+        "persist_hook": "0x0002335E"
+      },
+      "stock_dirty_bitset_untouched": "0x20003217",
+      "supports_v1_migration": true,
+      "supports_v2_migration": true,
+      "supports_v3_migration": true
+    },
+    "phase3_motion": {
+      "enabled": true,
+      "base": "0x00023384",
+      "spim3_hook": "0x00023552",
+      "ep81_guard": "0x0002351E",
+      "hook_sites": [
+        "0x0001DEFE",
+        "0x00018068",
+        "0x000180EE",
+        "0x000182BC",
+        "0x000182EE",
+        "0x00019A32",
+        "0x00019A6E",
+        "0x0000B29A",
+        "0x0001D1A0",
+        "0x0001D1BE",
+        "0x0001D2AA",
+        "0x00014582"
+      ]
+    },
+    "phase3_plock": {
+      "enabled": true,
+      "base": "0x0002361C",
+      "irq9_stationary_hook": "0x0002361C",
+      "irq9_plock_hook": "0x00023666",
+      "flash_pause_hook": "0x0002381E",
+      "flash_resume_hook": "0x00023840"
+    },
+    "phase3plus_abs": {
+      "enabled": true,
+      "default": "relative (type 0x02)",
+      "code_base": "0x00022E28",
+      "symbols": {
+        "p3p_wl_q2_push": "0x00022E28",
+        "p3p_rf_check_s2": "0x00022EB6",
+        "p3p_rf_set_type_b0": "0x00022EEA"
+      }
+    },
+    "phase3plus_w2": {
+      "enabled": true,
+      "base": "0x000238C8",
+      "p3p_irq6_hook": "0x000238F2",
+      "p3p_anti_slam_lifted": "0x00023948",
+      "p3p_anti_slam_landing": "0x00023964",
+      "p3p_lod_tail": "0x00023980",
+      "p3p_apply_ce_static": "0x00023A00",
+      "p3p_apply_lod_raw": "0x00023ABC",
+      "p3p_peek_worker": "0x00023B3A"
+    },
+    "group5": {
+      "enabled": true,
+      "group_id": 5,
+      "subcommands": {
+        "GET_STATE": "0x80",
+        "SNAP_TRIGGER": "0x01",
+        "SNAP_READ": "0x81",
+        "SET_FPS": "0x02",
+        "SET_DOWNSHIFT": "0x03",
+        "SET_SMOOTHING": "0x04",
+        "PERSIST_CTRL": "0x05",
+        "GET_P3_STATE": "0x82",
+        "GET_P3_DIAG": "0x83",
+        "SET_P3_CTRL": "0x06",
+        "RESET_P3_DIAG": "0x07",
+        "GET_P1_STATE": "0x84",
+        "SET_P1_CFG": "0x08"
+      },
+      "fps_preset_count": 38,
+      "ro_tables_base": "0x0002401C",
+      "ro_tables_bytes": 150,
+      "code_base": "0x00023BAC",
+      "symbols": {
+        "apply_id53_overrides": "0x00023C0E",
+        "override_worker": "0x00023D4C",
+        "snapshot_worker": "0x00023D90",
+        "group5_trampoline": "0x00023E24",
+        "group5_dispatch": "0x00023E2C",
+        "cave_mode_worker": "0x00023D62",
+        "cave_powerup_tail": "0x00023D72",
+        "cave_mode_apply_tail": "0x00023D7A"
+      },
+      "id53_isolation_branch_addr": "0x20003246",
+      "worker_queue_base": "0x20005895"
+    }
+  },
+  "capstone_report_path": "omitted_in_community_bundle"
+}
